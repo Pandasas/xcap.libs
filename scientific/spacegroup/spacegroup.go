@@ -159,6 +159,9 @@ func Get(fingerprint string) string {
 	sg["I41/acd"] = "I 41 / a c d"
 
 	// Trigonal
+
+	sg["P3"] = "P 3"
+	
 	fmt.Println("Searching for", fingerprint)
 	fmt.Println("Returning", sg[fingerprint])
 
