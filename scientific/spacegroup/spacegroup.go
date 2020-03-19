@@ -8,11 +8,11 @@ func Get(fingerprint string) string {
 	var sg map[string]string
 	sg = make(map[string]string)
 
-	// TRICLINIC
+	// Triclinic
 	sg["P1"] = "P 1"
 	sg["P-1"] = "P -1"
 
-	// MONOCLINIC
+	// Monolithic
 	sg["P121"] = "P 1 2 1"
 	sg["P1211"] = "P 1 21 1"
 	sg["C121"] = "C 1 2 1"
@@ -27,7 +27,7 @@ func Get(fingerprint string) string {
 	sg["P121/c1"] = "P 1 21 / c 1"
 	sg["C12/c1"] = "C 1 2 / c 1"
 
-	// ORTHOROMBIC
+	// Orthorombic
 	sg["P222"] = "P 2 2 2"
 	sg["P2221"] = "P 2 2 21"
 	sg["P21212"] = "P 21 21 2"
@@ -159,7 +159,6 @@ func Get(fingerprint string) string {
 	sg["I41/acd"] = "I 41 / a c d"
 
 	// Trigonal
-
 	sg["P3"] = "P 3"	
 	sg["P31"] = "P 31"
 	sg["P32"] = "P 32"
@@ -186,7 +185,6 @@ func Get(fingerprint string) string {
 	sg["R-3c"] = "R -3 c"
 
 	// Hexagonal
-
 	sg["P6"] = "P 6"	
 	sg["P61"] = "P 61"
 	sg["P65"] = "P 65"
@@ -216,8 +214,6 @@ func Get(fingerprint string) string {
 	sg["P63/mmc"] = "P 63 / m m c"
 
 	// Cubic
-
-
 	sg["P23"] = "P 2 3"	
 	sg["F23"] = "F 2 3"
 	sg["I23"] = "I 2 3"
@@ -254,13 +250,6 @@ func Get(fingerprint string) string {
 	sg["Fd-3c"] = "F d -3 c"
 	sg["Im-3m"] = "I m -3 m"
 	sg["Ia-3d"] = "I a -3 d"
-	
-
-	
-
-
-	
-
 	
 	fmt.Println("Searching for", fingerprint)
 	fmt.Println("Returning", sg[fingerprint])
